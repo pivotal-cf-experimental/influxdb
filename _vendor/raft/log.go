@@ -8,7 +8,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/influxdb/influxdb/_vendor/raft/protobuf"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/_vendor/raft/protobuf"
 )
 
 //------------------------------------------------------------------------------

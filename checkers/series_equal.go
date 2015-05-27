@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/influxdb/influxdb/protocol"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
 	. "launchpad.net/gocheck"
 )
 

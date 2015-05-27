@@ -1,7 +1,7 @@
 package helpers
 
 import (
-	influxdb "github.com/influxdb/influxdb/client"
+	influxdb "gopkg.in/pivotal-cf-experimental/influxdb.v0/client"
 	. "launchpad.net/gocheck"
 )
 

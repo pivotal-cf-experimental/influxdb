@@ -13,10 +13,10 @@ are up on S3 so that we can run it later. Just trust that I've run it (this is P
 // 	"path/filepath"
 // 	"time"
 
-// 	"github.com/influxdb/influxdb/datastore"
-// 	"github.com/influxdb/influxdb/migration"
+// 	"gopkg.in/pivotal-cf-experimental/influxdb.v0/datastore"
+// 	"gopkg.in/pivotal-cf-experimental/influxdb.v0/migration"
 
-// 	. "github.com/influxdb/influxdb/integration/helpers"
+// 	. "gopkg.in/pivotal-cf-experimental/influxdb.v0/integration/helpers"
 // 	. "launchpad.net/gocheck"
 // )
 

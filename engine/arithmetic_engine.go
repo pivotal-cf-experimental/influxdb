@@ -4,8 +4,8 @@ import (
 	"strconv"
 
 	log "code.google.com/p/log4go"
-	"github.com/influxdb/influxdb/parser"
-	"github.com/influxdb/influxdb/protocol"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/parser"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
 )
 
 type ArithmeticEngine struct {

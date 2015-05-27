@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/influxdb/influxdb/client"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/client"
 )
 
 func main() {

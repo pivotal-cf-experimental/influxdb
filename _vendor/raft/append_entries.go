@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 
 	"code.google.com/p/gogoprotobuf/proto"
-	"github.com/influxdb/influxdb/_vendor/raft/protobuf"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/_vendor/raft/protobuf"
 )
 
 // The request sent to a server to append entries to the log.

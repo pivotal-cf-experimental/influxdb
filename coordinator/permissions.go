@@ -1,8 +1,8 @@
 package coordinator
 
 import (
-	"github.com/influxdb/influxdb/common"
-	"github.com/influxdb/influxdb/parser"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/parser"
 )
 
 type Permissions struct{}

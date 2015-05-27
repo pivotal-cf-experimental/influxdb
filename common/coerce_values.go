@@ -1,7 +1,7 @@
 package common
 
 import (
-	"github.com/influxdb/influxdb/protocol"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
 )
 
 func getValue(value *protocol.FieldValue) (interface{}, Type) {

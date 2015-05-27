@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	log "code.google.com/p/log4go"
-	"github.com/influxdb/influxdb/protocol"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
 )
 
 var (

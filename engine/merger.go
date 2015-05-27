@@ -2,7 +2,7 @@ package engine
 
 import (
 	"code.google.com/p/log4go"
-	"github.com/influxdb/influxdb/protocol"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
 )
 
 // Merger merges a number of StreamQuery into one stream of points

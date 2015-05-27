@@ -19,12 +19,12 @@ import (
 
 	log "code.google.com/p/log4go"
 	"github.com/gorilla/mux"
-	"github.com/influxdb/influxdb/_vendor/raft"
-	"github.com/influxdb/influxdb/cluster"
-	"github.com/influxdb/influxdb/common"
-	"github.com/influxdb/influxdb/configuration"
-	"github.com/influxdb/influxdb/parser"
-	"github.com/influxdb/influxdb/protocol"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/_vendor/raft"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/cluster"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/configuration"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/parser"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
 )
 
 const (

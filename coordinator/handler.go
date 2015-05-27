@@ -3,7 +3,7 @@ package coordinator
 import (
 	"net"
 
-	"github.com/influxdb/influxdb/protocol"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
 )
 
 type Handler interface {
