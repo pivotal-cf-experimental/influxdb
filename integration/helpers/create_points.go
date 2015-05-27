@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 
-	influxdb "github.com/influxdb/influxdb/client"
+	influxdb "gopkg.in/pivotal-cf-experimental/influxdb.v0/client"
 )
 
 func CreatePoints(name string, numOfColumns, numOfPoints int) []*influxdb.Series {

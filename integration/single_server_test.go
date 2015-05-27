@@ -13,9 +13,9 @@ import (
 	"strings"
 	"time"
 
-	influxdb "github.com/influxdb/influxdb/client"
-	"github.com/influxdb/influxdb/datastore"
-	. "github.com/influxdb/influxdb/integration/helpers"
+	influxdb "gopkg.in/pivotal-cf-experimental/influxdb.v0/client"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/datastore"
+	. "gopkg.in/pivotal-cf-experimental/influxdb.v0/integration/helpers"
 	. "launchpad.net/gocheck"
 )
 
@@ -638,7 +638,7 @@ func (self *SingleServerSuite) TestEmptyResponseWhenNoShardsMatchQuery(c *C) {
 	c.Assert(failingContent, HasLen, 0)
 }
 
-// issue https://github.com/influxdb/influxdb/issues/702. Dropping shards can cause server crash
+// issue https://gopkg.in/pivotal-cf-experimental/influxdb.v0/issues/702. Dropping shards can cause server crash
 // Two cases here. First is they try to drop the same shard multiple times. Second is that
 // they drop a shard and the server gets restarted so the raft log replays and tries to drop it again.
 func (self *SingleServerSuite) TestDroppingShardBeforeRestart(c *C) {
@@ -833,7 +833,7 @@ func (self *SingleServerSuite) TestInvalidDbUserCreation(c *C) {
 	c.Assert(client.CreateDatabaseUser("db999", "user", "pass"), NotNil)
 }
 
-// fix for #640 https://github.com/influxdb/influxdb/issues/640 - duplicate shards
+// fix for #640 https://gopkg.in/pivotal-cf-experimental/influxdb.v0/issues/640 - duplicate shards
 func (self *SingleServerSuite) TestDuplicateShardsNotCreatedWhenOldShardDropped(c *C) {
 	self.server.WriteData(`
 [
@@ -1119,7 +1119,7 @@ func (self *SingleServerSuite) TestUpdateShardSpace(c *C) {
 	c.Assert(series[0].Points[0][2], Equals, float64(5))
 }
 
-// for issue #853 https://github.com/influxdb/influxdb/issues/853
+// for issue #853 https://gopkg.in/pivotal-cf-experimental/influxdb.v0/issues/853
 func (self *SingleServerSuite) TestApiReturnsClusterConfigOnlyIfAdmin(c *C) {
 	resp, err := http.Get("http://localhost:8086/cluster/configuration?u=root&p=root")
 	c.Assert(err, IsNil)

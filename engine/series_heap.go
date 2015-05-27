@@ -3,7 +3,7 @@ package engine
 import (
 	"container/heap"
 
-	"github.com/influxdb/influxdb/protocol"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
 )
 
 type Value struct {

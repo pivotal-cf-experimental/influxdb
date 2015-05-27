@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	. "github.com/influxdb/influxdb/integration/helpers"
+	. "gopkg.in/pivotal-cf-experimental/influxdb.v0/integration/helpers"
 	. "launchpad.net/gocheck"
 )
 

@@ -7,7 +7,7 @@ import (
 	"time"
 
 	log "code.google.com/p/log4go"
-	"github.com/influxdb/influxdb/common"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
 )
 
 type GroupByClause struct {

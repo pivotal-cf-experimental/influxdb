@@ -3,8 +3,8 @@ package integration
 import (
 	"os"
 
-	influxdb "github.com/influxdb/influxdb/client"
-	. "github.com/influxdb/influxdb/integration/helpers"
+	influxdb "gopkg.in/pivotal-cf-experimental/influxdb.v0/client"
+	. "gopkg.in/pivotal-cf-experimental/influxdb.v0/integration/helpers"
 	. "launchpad.net/gocheck"
 )
 

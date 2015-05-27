@@ -12,10 +12,10 @@ import (
 	"time"
 
 	log "code.google.com/p/log4go"
-	"github.com/influxdb/influxdb/_vendor/raft"
-	"github.com/influxdb/influxdb/configuration"
-	"github.com/influxdb/influxdb/coordinator"
-	"github.com/influxdb/influxdb/server"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/_vendor/raft"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/configuration"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/coordinator"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/server"
 	"github.com/jmhodges/levigo"
 )
 

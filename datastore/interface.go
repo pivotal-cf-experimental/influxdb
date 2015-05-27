@@ -1,9 +1,9 @@
 package datastore
 
 import (
-	"github.com/influxdb/influxdb/common"
-	"github.com/influxdb/influxdb/parser"
-	"github.com/influxdb/influxdb/protocol"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/parser"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
 )
 
 type Datastore interface {

@@ -3,7 +3,7 @@ package engine
 import (
 	"fmt"
 
-	"github.com/influxdb/influxdb/protocol"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
 )
 
 // Passed to a shard (local datastore or whatever) that gets yielded points from series.

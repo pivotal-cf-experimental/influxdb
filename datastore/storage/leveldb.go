@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/influxdb/influxdb/configuration"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/configuration"
 	levigo "github.com/jmhodges/levigo"
 )
 

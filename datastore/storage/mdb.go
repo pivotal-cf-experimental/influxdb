@@ -6,7 +6,7 @@ import (
 	"os"
 
 	mdb "github.com/influxdb/gomdb"
-	"github.com/influxdb/influxdb/configuration"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/configuration"
 )
 
 const MDB_NAME = "lmdb"

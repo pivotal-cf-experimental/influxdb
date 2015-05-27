@@ -5,9 +5,9 @@ import (
 
 	"code.google.com/p/goprotobuf/proto"
 	"code.google.com/p/log4go"
-	"github.com/influxdb/influxdb/datastore/storage"
-	"github.com/influxdb/influxdb/metastore"
-	"github.com/influxdb/influxdb/protocol"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/datastore/storage"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/metastore"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
 )
 
 // PointIterator takes a slice of iterators and their corresponding

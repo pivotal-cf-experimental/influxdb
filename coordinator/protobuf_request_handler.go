@@ -8,10 +8,10 @@ import (
 	"net"
 
 	log "code.google.com/p/log4go"
-	"github.com/influxdb/influxdb/cluster"
-	"github.com/influxdb/influxdb/common"
-	"github.com/influxdb/influxdb/parser"
-	"github.com/influxdb/influxdb/protocol"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/cluster"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/parser"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
 )
 
 type ProtobufRequestHandler struct {

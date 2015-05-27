@@ -1,6 +1,6 @@
 package engine
 
-import "github.com/influxdb/influxdb/protocol"
+import "gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
 
 type MergeEngine struct {
 	name string

@@ -3,7 +3,7 @@ package cluster
 import (
 	"testing"
 
-	"github.com/influxdb/influxdb/common"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
 	. "launchpad.net/gocheck"
 )
 

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/influxdb/influxdb/protocol"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
 )
 
 // TODO: add some documentation

@@ -1,7 +1,7 @@
 package engine
 
 import (
-	"github.com/influxdb/influxdb/protocol"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
 )
 
 type Limiter struct {

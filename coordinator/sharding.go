@@ -1,8 +1,8 @@
 package coordinator
 
 import (
-	"github.com/influxdb/influxdb/cluster"
-	"github.com/influxdb/influxdb/parser"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/cluster"
+	"gopkg.in/pivotal-cf-experimental/influxdb.v0/parser"
 )
 
 // duration 1h, 1d, 7d
