@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
+	"github.com/influxdb/influxdb/common"
 )
 
 // this file provides the high level api of the query object

@@ -2,8 +2,8 @@ package cluster
 
 import (
 	"code.google.com/p/log4go"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/engine"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/engine"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 // ResponseChannelProcessor converts Series to Responses. This is used

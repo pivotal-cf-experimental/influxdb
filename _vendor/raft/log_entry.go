@@ -7,7 +7,7 @@ import (
 	"io"
 
 	"code.google.com/p/gogoprotobuf/proto"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/_vendor/raft/protobuf"
+	"github.com/influxdb/influxdb/_vendor/raft/protobuf"
 )
 
 // A log entry stores a single item in the log.

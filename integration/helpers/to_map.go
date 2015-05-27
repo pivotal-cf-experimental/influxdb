@@ -1,6 +1,6 @@
 package helpers
 
-import "gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
+import "github.com/influxdb/influxdb/common"
 
 func ToMap(series common.ApiSeries) []map[string]interface{} {
 	seriesPoints := series.GetPoints()

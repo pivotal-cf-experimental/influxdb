@@ -372,7 +372,7 @@ func (self *Client) WriteSeriesOverUDP(series []*Series) error {
 		return err
 	}
 	// because max of msg over upd is 2048 bytes
-	// https://gopkg.in/pivotal-cf-experimental/influxdb.v0/blob/master/src/api/udp/api.go#L65
+	// https://github.com/influxdb/influxdb/blob/master/src/api/udp/api.go#L65
 	if len(data) >= UDPMaxMessageSize {
 		err = fmt.Errorf("data size over limit %v limit is %v", len(data), UDPMaxMessageSize)
 		fmt.Println(err)

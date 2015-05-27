@@ -1,7 +1,7 @@
 package wal
 
 import (
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 type closeEntry struct {

@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"time"
 
-	influxdb "gopkg.in/pivotal-cf-experimental/influxdb.v0/client"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/engine"
-	. "gopkg.in/pivotal-cf-experimental/influxdb.v0/integration/helpers"
+	influxdb "github.com/influxdb/influxdb/client"
+	"github.com/influxdb/influxdb/engine"
+	. "github.com/influxdb/influxdb/integration/helpers"
 	. "launchpad.net/gocheck"
 )
 
@@ -1905,7 +1905,7 @@ func (self *DataTestSuite) TestSelectingTimeColumn(c *C) {
 	c.Assert(collection[0].Points, HasLen, 1)
 }
 
-// For issue #130 https://gopkg.in/pivotal-cf-experimental/influxdb.v0/issues/130
+// For issue #130 https://github.com/influxdb/influxdb/issues/130
 func (self *DataTestSuite) TestColumnNamesReturnInDistributedQuery(c *C) {
 	data := `[{
 		"name": "cluster_query_with_columns",
@@ -1951,7 +1951,7 @@ func (self *DataTestSuite) TestLimitWithRegex(c *C) {
 	}
 }
 
-// For issue #131 https://gopkg.in/pivotal-cf-experimental/influxdb.v0/issues/131
+// For issue #131 https://github.com/influxdb/influxdb/issues/131
 func (self *DataTestSuite) TestSelectFromRegexInCluster(c *C) {
 	data := `[{
 		"name": "cluster_regex_query",
@@ -1999,7 +1999,7 @@ func (self *DataTestSuite) TestListSeries(c *C) {
 	c.Assert(names["another_query"], Equals, true)
 }
 
-// For issue #267 - allow all characters in series name - https://gopkg.in/pivotal-cf-experimental/influxdb.v0/issues/267
+// For issue #267 - allow all characters in series name - https://github.com/influxdb/influxdb/issues/267
 func (self *DataTestSuite) TestSeriesNameWithWeirdCharacters(c *C) {
 	data := `[
   	  	{
@@ -2015,7 +2015,7 @@ func (self *DataTestSuite) TestSeriesNameWithWeirdCharacters(c *C) {
 	c.Assert(result[0].Name, Equals, "/blah ( ) ; : ! @ # $ \n \t,foo\"=bar/baz")
 }
 
-// For issue #466 - allow all characters in column names - https://gopkg.in/pivotal-cf-experimental/influxdb.v0/issues/267
+// For issue #466 - allow all characters in column names - https://github.com/influxdb/influxdb/issues/267
 func (self *DataTestSuite) TestColumnNameWithWeirdCharacters(c *C) {
 	data := `[
   	  	{
@@ -2033,7 +2033,7 @@ func (self *DataTestSuite) TestColumnNameWithWeirdCharacters(c *C) {
 	c.Assert(result[0].Columns[2], Equals, `baz.-239(*@&#$!#)(* #$@`)
 }
 
-// For issue #551 - add aggregate function top and bottom - https://gopkg.in/pivotal-cf-experimental/influxdb.v0/issues/551
+// For issue #551 - add aggregate function top and bottom - https://github.com/influxdb/influxdb/issues/551
 func (self *DataTestSuite) TestTop(c *C) {
 	for i := 0; i < 3; i++ {
 		self.client.WriteJsonData(fmt.Sprintf(`

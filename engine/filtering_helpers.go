@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/parser"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/parser"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 func getExpressionValue(values []*parser.Value, fields []string, point *protocol.Point) ([]*protocol.FieldValue, error) {

@@ -3,7 +3,7 @@ package http
 import (
 	"fmt"
 
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
+	"github.com/influxdb/influxdb/common"
 )
 
 type Operation struct {

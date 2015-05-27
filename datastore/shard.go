@@ -10,12 +10,12 @@ import (
 
 	"code.google.com/p/goprotobuf/proto"
 	log "code.google.com/p/log4go"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/datastore/storage"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/engine"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/metastore"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/parser"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/common"
+	"github.com/influxdb/influxdb/datastore/storage"
+	"github.com/influxdb/influxdb/engine"
+	"github.com/influxdb/influxdb/metastore"
+	"github.com/influxdb/influxdb/parser"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 type Shard struct {

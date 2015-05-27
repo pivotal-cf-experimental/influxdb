@@ -2,7 +2,7 @@ package engine
 
 import (
 	"code.google.com/p/log4go"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 type CommonMergeEngine struct {

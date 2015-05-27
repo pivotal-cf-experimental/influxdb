@@ -1,6 +1,6 @@
 package engine
 
-import "gopkg.in/pivotal-cf-experimental/influxdb.v0/parser"
+import "github.com/influxdb/influxdb/parser"
 
 func NewQueryEngine(next Processor, query *parser.SelectQuery, shards []uint32) (Processor, error) {
 	limit := query.Limit

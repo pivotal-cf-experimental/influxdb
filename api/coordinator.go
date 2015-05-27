@@ -1,10 +1,10 @@
 package api
 
 import (
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/cluster"
-	cmn "gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/engine"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/cluster"
+	cmn "github.com/influxdb/influxdb/common"
+	"github.com/influxdb/influxdb/engine"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 // The following are the api that is accessed by any api

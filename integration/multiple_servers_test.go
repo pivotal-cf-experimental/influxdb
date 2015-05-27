@@ -11,9 +11,9 @@ import (
 	"os"
 	"time"
 
-	influxdb "gopkg.in/pivotal-cf-experimental/influxdb.v0/client"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
-	. "gopkg.in/pivotal-cf-experimental/influxdb.v0/integration/helpers"
+	influxdb "github.com/influxdb/influxdb/client"
+	"github.com/influxdb/influxdb/common"
+	. "github.com/influxdb/influxdb/integration/helpers"
 	. "launchpad.net/gocheck"
 )
 
@@ -262,7 +262,7 @@ func (self *ServerSuite) TestEntireClusterReStartAfterCompaction(c *C) {
 	}
 }
 
-// For issue #140 https://gopkg.in/pivotal-cf-experimental/influxdb.v0/issues/140
+// For issue #140 https://github.com/influxdb/influxdb/issues/140
 func (self *ServerSuite) TestRestartServers(c *C) {
 	data := `
   [{
@@ -1310,7 +1310,7 @@ func (self *ServerSuite) TestChangingRaftPort(c *C) {
 	c.Assert(s.GetValueForPointAndColumn(0, "value", c), Equals, 1.0)
 }
 
-// fix for #305: https://gopkg.in/pivotal-cf-experimental/influxdb.v0/issues/305
+// fix for #305: https://github.com/influxdb/influxdb/issues/305
 func (self *ServerSuite) TestShardIdUniquenessAfterReStart(c *C) {
 	server := self.serverProcesses[0]
 	t := (time.Now().Unix() + 86400*720) * 1000

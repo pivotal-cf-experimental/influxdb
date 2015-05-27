@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"code.google.com/p/goprotobuf/proto"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/datastore/storage"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/datastore/storage"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 type Config struct {

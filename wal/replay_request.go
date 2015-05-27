@@ -1,8 +1,8 @@
 package wal
 
 import (
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/common"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 type replayRequest struct {

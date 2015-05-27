@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/cluster"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/cluster"
+	"github.com/influxdb/influxdb/protocol"
 	. "launchpad.net/gocheck"
 )
 

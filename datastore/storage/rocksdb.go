@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"sync"
 
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/configuration"
+	"github.com/influxdb/influxdb/configuration"
 	rocksdb "github.com/influxdb/rocksdb"
 )
 

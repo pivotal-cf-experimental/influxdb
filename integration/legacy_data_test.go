@@ -9,11 +9,11 @@ import (
 	"os"
 	"time"
 
-	. "gopkg.in/pivotal-cf-experimental/influxdb.v0/checkers"
-	influxdb "gopkg.in/pivotal-cf-experimental/influxdb.v0/client"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
-	. "gopkg.in/pivotal-cf-experimental/influxdb.v0/integration/helpers"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	. "github.com/influxdb/influxdb/checkers"
+	influxdb "github.com/influxdb/influxdb/client"
+	"github.com/influxdb/influxdb/common"
+	. "github.com/influxdb/influxdb/integration/helpers"
+	"github.com/influxdb/influxdb/protocol"
 	. "launchpad.net/gocheck"
 )
 

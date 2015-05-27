@@ -3,8 +3,8 @@ package engine
 import (
 	"fmt"
 
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/parser"
-	p "gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/parser"
+	p "github.com/influxdb/influxdb/protocol"
 )
 
 type FilteringEngine struct {

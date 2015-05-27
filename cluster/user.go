@@ -5,7 +5,7 @@ import (
 
 	"code.google.com/p/go.crypto/bcrypt"
 	"github.com/influxdb/go-cache"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
+	"github.com/influxdb/influxdb/common"
 )
 
 var userCache *cache.Cache

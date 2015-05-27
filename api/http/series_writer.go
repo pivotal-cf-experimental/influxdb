@@ -3,8 +3,8 @@ package http
 // This implements the SeriesWriter interface for use with the API
 
 import (
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/engine"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/engine"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 type SeriesWriter struct {

@@ -1,8 +1,8 @@
 package coordinator
 
 import (
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/cluster"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
+	"github.com/influxdb/influxdb/cluster"
+	"github.com/influxdb/influxdb/common"
 	. "launchpad.net/gocheck"
 )
 

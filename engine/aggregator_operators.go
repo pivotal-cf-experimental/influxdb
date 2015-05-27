@@ -10,9 +10,9 @@ import (
 
 	"code.google.com/p/goprotobuf/proto"
 
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/parser"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/common"
+	"github.com/influxdb/influxdb/parser"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 type PointSlice []protocol.Point

@@ -1046,7 +1046,7 @@ func (self *QueryParserSuite) TestMinusWithoutSpace(c *C) {
 	c.Assert(column.Name, Equals, "-")
 }
 
-// For issue #466 - allow all characters in column names - https://gopkg.in/pivotal-cf-experimental/influxdb.v0/issues/267
+// For issue #466 - allow all characters in column names - https://github.com/influxdb/influxdb/issues/267
 func (self *QueryParserSuite) TestParseColumnWithPeriodOrDash(c *C) {
 	query := "select count(\"column-a.foo\") as \"count-column-a.foo\" from seriesA;"
 	q, err := ParseSelectQuery(query)
@@ -1067,7 +1067,7 @@ func (self *QueryParserSuite) TestQueryErrorShouldHaveQueryString(c *C) {
 	c.Assert(e.queryString, Equals, query)
 }
 
-// For issue #496 - parentheses value should support alias https://gopkg.in/pivotal-cf-experimental/influxdb.v0/issues/496
+// For issue #496 - parentheses value should support alias https://github.com/influxdb/influxdb/issues/496
 func (self *QueryParserSuite) TestQueryParenthesesValueShouldSupportAlias(c *C) {
 	query := "select (1 + 2) as arithmetic_result from foo;"
 	q, err := ParseSelectQuery(query)

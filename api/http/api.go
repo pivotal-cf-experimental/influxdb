@@ -18,13 +18,13 @@ import (
 
 	log "code.google.com/p/log4go"
 	"github.com/bmizerany/pat"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/api"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/cluster"
-	. "gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/configuration"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/coordinator"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/parser"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/api"
+	"github.com/influxdb/influxdb/cluster"
+	. "github.com/influxdb/influxdb/common"
+	"github.com/influxdb/influxdb/configuration"
+	"github.com/influxdb/influxdb/coordinator"
+	"github.com/influxdb/influxdb/parser"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 type HttpServer struct {

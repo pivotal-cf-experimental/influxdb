@@ -4,9 +4,9 @@ package coordinator
 // queries to write their output back into the db
 
 import (
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/engine"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/parser"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/engine"
+	"github.com/influxdb/influxdb/parser"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 type ContinuousQueryWriter struct {

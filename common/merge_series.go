@@ -3,7 +3,7 @@ package common
 import (
 	"reflect"
 
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 func pointMaps(s *protocol.Series) (result []map[string]*protocol.FieldValue) {

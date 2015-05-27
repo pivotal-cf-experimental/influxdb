@@ -6,9 +6,9 @@ import (
 
 	"code.google.com/p/log4go"
 
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/engine"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/common"
+	"github.com/influxdb/influxdb/engine"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 // This struct is responsible for merging responses from multiple

@@ -1,6 +1,6 @@
 package datastore
 
-import "gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+import "github.com/influxdb/influxdb/protocol"
 
 // PointIteratorStream is a struct that implements the StreamQuery
 // interface and is used by the shard with the Merger to merge the

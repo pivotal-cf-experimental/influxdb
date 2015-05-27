@@ -4,7 +4,7 @@ import (
 	"regexp"
 	"time"
 
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
+	"github.com/influxdb/influxdb/common"
 )
 
 type QuerySpec struct {

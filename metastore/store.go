@@ -7,7 +7,7 @@ import (
 	"sort"
 	"sync"
 
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 type Store struct {

@@ -6,10 +6,10 @@ import (
 	"sync"
 
 	log "code.google.com/p/log4go"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/api"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/cluster"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/configuration"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	"github.com/influxdb/influxdb/api"
+	"github.com/influxdb/influxdb/cluster"
+	"github.com/influxdb/influxdb/configuration"
+	"github.com/influxdb/influxdb/protocol"
 
 	collectd "github.com/kimor79/gollectd"
 )

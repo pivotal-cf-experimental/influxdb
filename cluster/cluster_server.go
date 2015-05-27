@@ -7,8 +7,8 @@ import (
 	"time"
 
 	log "code.google.com/p/log4go"
-	c "gopkg.in/pivotal-cf-experimental/influxdb.v0/configuration"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
+	c "github.com/influxdb/influxdb/configuration"
+	"github.com/influxdb/influxdb/protocol"
 )
 
 const (

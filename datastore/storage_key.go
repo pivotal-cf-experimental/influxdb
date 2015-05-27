@@ -9,7 +9,7 @@ import (
 
 	"code.google.com/p/log4go"
 
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
+	"github.com/influxdb/influxdb/common"
 )
 
 const maxSeqNumber = (1 << 64) - 1

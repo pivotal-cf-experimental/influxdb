@@ -7,12 +7,12 @@ import (
 	"time"
 
 	log "code.google.com/p/log4go"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/engine"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/metastore"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/parser"
-	p "gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/wal"
+	"github.com/influxdb/influxdb/common"
+	"github.com/influxdb/influxdb/engine"
+	"github.com/influxdb/influxdb/metastore"
+	"github.com/influxdb/influxdb/parser"
+	p "github.com/influxdb/influxdb/protocol"
+	"github.com/influxdb/influxdb/wal"
 )
 
 // A shard implements an interface for writing and querying data.
@@ -525,7 +525,7 @@ func (self *ShardData) HandleDestructiveQuery(querySpec *parser.QuerySpec, reque
 			}
 
 			// don't send the access denied response until the end so the readers don't close out before the other responses.
-			// See https://gopkg.in/pivotal-cf-experimental/influxdb.v0/issues/316 for more info.
+			// See https://github.com/influxdb/influxdb/issues/316 for more info.
 			if res.GetType() != p.Response_ERROR {
 				response <- res
 			} else if errorResponse == nil {

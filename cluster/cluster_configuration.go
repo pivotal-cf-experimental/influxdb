@@ -15,12 +15,12 @@ import (
 	"time"
 
 	log "code.google.com/p/log4go"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/common"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/configuration"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/metastore"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/parser"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/protocol"
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/wal"
+	"github.com/influxdb/influxdb/common"
+	"github.com/influxdb/influxdb/configuration"
+	"github.com/influxdb/influxdb/metastore"
+	"github.com/influxdb/influxdb/parser"
+	"github.com/influxdb/influxdb/protocol"
+	"github.com/influxdb/influxdb/wal"
 )
 
 // defined by cluster config (in cluster package)
@@ -676,7 +676,7 @@ func (self *ClusterConfiguration) Recovery(b []byte) error {
 	self.dbUsers = data.DbUsers
 	self.servers = data.Servers
 
-	// if recovering from a snapshot from version 0.7.x the metastore will be nil. Fix #868 https://gopkg.in/pivotal-cf-experimental/influxdb.v0/issues/868
+	// if recovering from a snapshot from version 0.7.x the metastore will be nil. Fix #868 https://github.com/influxdb/influxdb/issues/868
 	if data.MetaStore != nil {
 		self.MetaStore.UpdateFromSnapshot(data.MetaStore)
 	}

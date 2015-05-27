@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"gopkg.in/pivotal-cf-experimental/influxdb.v0/datastore/storage"
+	"github.com/influxdb/influxdb/datastore/storage"
 )
 
 func main() {
